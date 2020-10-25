@@ -15,7 +15,7 @@ weight=random(30,52)
 
 function draw() {
   background(255,255,255);  
-  if(wall.x-bullet.x < (bullet.width+wall.width)/3){
+  if(hasCollided());{
     bullet.velocityX=0
     {
       bullet.shapeColor=color(255,0,0);
@@ -37,7 +37,7 @@ function draw() {
     }
   
   }
-  hasCollided();
+  
 
   drawSprites();
 }
