@@ -15,8 +15,8 @@ weight=random(30,52)
 
 function draw() {
   background(255,255,255);  
-  if(hasCollided(bullet,wall));{
-    bullet.velocityX=0
+  if(hasCollided(bullet,wall)){
+      bullet.velocityX=0
     {
       bullet.shapeColor=color(255,0,0);
     
