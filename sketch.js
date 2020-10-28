@@ -17,12 +17,6 @@ function draw() {
   background(255,255,255);  
   if(hasCollided(bullet,wall)){
       bullet.velocityX=0
-    {
-      bullet.shapeColor=color(255,0,0);
-    
-    }
-      bullet.shapeColor=color(230,230,0);
-
     
     if(damage>10)
     {
