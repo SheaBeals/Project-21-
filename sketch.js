@@ -14,9 +14,13 @@ weight=random(30,52)
 }
 
 function draw() {
-  background(255,255,255);  
-  if(hasCollided(bullet,wall)){
-      bullet.velocityX=0
+  
+  background(255,255,255); 
+  
+  if(hasCollided(bullet,wall))
+  { 
+    bullet.velocityX=0
+    var damage=0.5 *weight *speed speed/(thickness *thickness *thickness);
     
     if(damage>10)
     {
