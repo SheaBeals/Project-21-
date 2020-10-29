@@ -17,27 +17,29 @@ function draw() {
   
   background(255,255,255); 
   
-  if(hasCollided(bullet,wall))
+  if(hasCollided(bullet, wall));
   { 
-    bullet.velocityX=0
+    bullet.velocityX=0;
     var damage=0.5 * weight * speed* speed/(thickness *thickness *thickness);
     
     if(damage>10)
     {
-      wall.shapeColor=color(255,0,0);
+      wall.fill=color(255,0,0);
 
     }
 
 
     if(damage<10)
     {
-      wall.shapeColor=color(0,255,0);
+      wall.fill=color(0,255,0);
     }
   
   }
   
+  rectMode(CENTER);
+  rect(wall.position.x,wall.positon.y);
 
-  drawSprites();
+  
 }
 function hasCollided(lbullet,lwall)
 {
