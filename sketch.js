@@ -37,8 +37,14 @@ function draw() {
   }
   
   rectMode(CENTER);
+  wall.fill=colour('purple');
+  rect(wall.position.x,wall.positon.y,10,20);
+  
+  rectMode(CENTER);
+  wall.fill=colour('purple');
   rect(wall.position.x,wall.positon.y,10,20);
 
+  
   
 }
 function hasCollided(lbullet,lwall)
