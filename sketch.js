@@ -38,11 +38,11 @@ function draw() {
   
   rectMode(CENTER);
   wall.fill=colour('purple');
-  rect(wall.position.x,wall.positon.y,10,20);
+  rect(wall.position.x,wall.positon.y);
   
   rectMode(CENTER);
   wall.fill=colour('purple');
-  rect(wall.position.x,wall.positon.y,10,20);
+  rect(wall.position.x,wall.positon.y);
 
   
   
