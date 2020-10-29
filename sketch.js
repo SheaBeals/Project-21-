@@ -37,7 +37,7 @@ function draw() {
   }
   
   rectMode(CENTER);
-  rect(wall.position.x,wall.positon.y);
+  rect(wall.position.x,wall.positon.y,10,20);
 
   
 }
