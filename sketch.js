@@ -24,8 +24,7 @@ function draw() {
     
     if(damage>10)
     {
-      wall.fill=color(255,0,0);
-
+      wall.fill=colour(0,255,0);
     }
 
 
@@ -37,11 +36,11 @@ function draw() {
   }
   
   rectMode(CENTER);
-  wall.fill=colour('purple');
+  wall.shapeColor=color(255,0,0); 
   rect(wall.position.x,wall.positon.y);
   
   rectMode(CENTER);
-  wall.fill=colour('purple');
+  wall.shapeColor=color(255,0,0); 
   rect(wall.position.x,wall.positon.y);
 
   
