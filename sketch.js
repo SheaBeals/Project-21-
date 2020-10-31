@@ -24,27 +24,18 @@ function draw() {
     
     if(damage>10)
     {
-      wall.fill=colour(0,255,0);
+      wall.shapeColor =color(255,0,0);
     }
 
 
     if(damage<10)
     {
-      wall.fill=color(0,255,0);
+      wall.shapeColor =color(0,255,0);
     }
   
   }
   
-  rectMode(CENTER);
-  wall.shapeColor=color(255,0,0); 
-  rect(wall.position.x,wall.positon.y);
-  
-  rectMode(CENTER);
-  wall.shapeColor=color(255,0,0); 
-  rect(wall.position.x,wall.positon.y);
-
-  
-  
+ 
 }
 function hasCollided(lbullet,lwall)
 {
